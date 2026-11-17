@@ -237,6 +237,60 @@ a:hover {
     line-height: 1.5;
 }
 
+
+
+/* =========================================
+   Thermodynamics gallery
+   ========================================= */
+.therm-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin: 35px 0 40px;
+}
+
+.therm-gallery figure {
+    margin: 0;
+}
+
+.therm-gallery .therm-main-figure {
+    grid-column: 1 / -1;
+}
+
+.therm-gallery img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--surface);
+
+    box-shadow: 0 5px 18px rgba(23, 33, 43, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.therm-gallery img:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(23, 33, 43, 0.11);
+}
+
+.therm-gallery figcaption {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+
+
 /* =========================================
    Publications
    ========================================= */
